@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "999580137729",
+    "firebase_url": "https://websilup.firebaseio.com",
+    "project_id": "websilup",
+    "storage_bucket": "websilup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999580137729:android:08e7d8e0bc870f3625c300",
+        "android_client_info": {
+          "package_name": "br.com.silup.app.agency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999580137729-2k807batb8hkcvmc8k81rmp5ua67ukqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY88CNT-Vxql6GFbkY1nni2Jc7qcYWUek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999580137729-2k807batb8hkcvmc8k81rmp5ua67ukqj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "999580137729-ard6317lvvs9f7np0ipficbd25kc5jc7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.silup.app.citizen"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999580137729:android:8535e62f99a930f025c300",
+        "android_client_info": {
+          "package_name": "br.com.silup.app.cidadao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999580137729-2k807batb8hkcvmc8k81rmp5ua67ukqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY88CNT-Vxql6GFbkY1nni2Jc7qcYWUek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999580137729-2k807batb8hkcvmc8k81rmp5ua67ukqj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "999580137729-ard6317lvvs9f7np0ipficbd25kc5jc7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.silup.app.citizen"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999580137729:android:ddbdf22a37d1a0ed25c300",
+        "android_client_info": {
+          "package_name": "br.com.silup.app.citizen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999580137729-2k807batb8hkcvmc8k81rmp5ua67ukqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY88CNT-Vxql6GFbkY1nni2Jc7qcYWUek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999580137729-2k807batb8hkcvmc8k81rmp5ua67ukqj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "999580137729-ard6317lvvs9f7np0ipficbd25kc5jc7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.silup.app.citizen"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
