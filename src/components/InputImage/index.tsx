@@ -33,10 +33,12 @@ const InputImage: React.FC<InputImageProps> = ({ label, onImageCapture }) => {
         const imageData = image as ImageData;
 
         const filename = `${new Date().getTime()}.jpg`;
-        const dirPath = `${RNFS.ExternalCachesDirectoryPath}/images`;
+        const dirPath = `${RNFS.CachesDirectoryPath}/images`;
         const filePath = `${dirPath}/${filename}`;
 
-        await RNFS.mkdir(dirPath);
+        await RNFS.mkdir(dirPath, {
+          NSURLIsExcludedFromBackupKey: true,
+        });
 
         await RNFS.writeFile(filePath, imageData.data || '', 'base64');
 

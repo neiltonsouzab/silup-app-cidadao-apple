@@ -3,7 +3,7 @@ import firebaseStorage from '@react-native-firebase/storage';
 
 const uploadFile = async (filename: string): Promise<string> => {
   try {
-    const path = `${RNFS.ExternalCachesDirectoryPath}/images/${filename}`;
+    const path = `${RNFS.CachesDirectoryPath}/images/${filename}`;
 
     const reference = firebaseStorage().ref(`/ImagensOcorrencias/${filename}`);
 

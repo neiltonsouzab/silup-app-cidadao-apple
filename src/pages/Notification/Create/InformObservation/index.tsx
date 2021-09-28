@@ -87,6 +87,8 @@ const InformObservation: React.FC = () => {
         imageUrl = await uploadFile(imageName);
       }
 
+      console.log(imageUrl);
+
       await api.post('/criar_notificacao_cidadao_apple', null, {
         params: {
           cpf_cnpj: user.cpfCnpj,
