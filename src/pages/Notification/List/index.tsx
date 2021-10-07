@@ -8,7 +8,6 @@ import {
   Platform,
 } from 'react-native';
 import { useFocusEffect, useNavigation } from '@react-navigation/core';
-import { parse, format } from 'date-fns';
 
 import { useAuth } from '../../../hooks/auth';
 import api from '../../../services/api';
@@ -49,6 +48,8 @@ interface ProblemResponse {
     nometipoocorrencia: string;
     nomesituacaoocorrencia: string;
     created_at: string;
+    data_previsao: string;
+    data_criacao: string;
   }[];
 }
 
@@ -58,7 +59,8 @@ export interface Problem {
   type: string;
   status: string;
   icon: ImageSourcePropType;
-  date: string;
+  created_at: string;
+  forecast_date: string;
 }
 
 interface IconProps {
@@ -98,10 +100,8 @@ const List: React.FC = () => {
               type: item.nometipoocorrencia,
               status: item.nomesituacaoocorrencia,
               icon: icons[item.nometipoocorrencia] || lampOthersUnselected,
-              date: format(
-                parse(item.created_at, 'dd-MM-yyyy HH:mm:ss', new Date()),
-                'dd/MM/yyyy HH:mm',
-              ),
+              created_at: item.data_criacao,
+              forecast_date: item.data_previsao,
             };
           });
 
@@ -162,7 +162,12 @@ const List: React.FC = () => {
                 {problem.status}
               </ProblemItemStatus>
               <ProblemItemAddress>{problem.address}</ProblemItemAddress>
-              <ProblemItemDate>{problem.date}</ProblemItemDate>
+              <ProblemItemDate>
+                DATA ABERTURA: {problem.created_at}
+              </ProblemItemDate>
+              <ProblemItemDate>
+                PREVISÃO ATENDIMENTO: {problem.forecast_date}
+              </ProblemItemDate>
               <Indicator />
             </ProblemItem>
           )}
